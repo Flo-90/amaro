@@ -1,0 +1,1117 @@
+/*------------------------------------------------------------------------------*/
+/*--                                Fonts                                     --*/
+/*------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400');
+
+/*------------------------------------------------------------------------------*/
+/*--                                Global                                    --*/
+/*------------------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: #270603;
+    color: #C5A153;
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+}
+
+h2 { 
+    color: #EEB607;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+a { text-decoration: none; }
+
+ul { list-style: none }
+
+/*------------------------------------------------------------------------------*/
+/*--                                Style                                     --*/
+/*------------------------------------------------------------------------------*/
+
+#main-container {
+    max-width: 1980px;
+    margin: auto;
+    min-height: 100%;
+    -webkit-box-shadow: 0 2px 30px #000;
+    box-shadow: 0 2px 30px #000;
+}
+
+#sub-container {
+    max-width: 1980px;
+    margin: auto;
+    min-height: 100%;
+    -webkit-box-shadow: 0 2px 30px #000;
+    box-shadow: 0 2px 30px #000;
+}
+
+#hero-section {
+    width: 100%;
+    height: 80vh;
+    min-height: 400px;
+    max-height: 700px;
+    border-bottom: solid 3px #C5A153;
+}
+
+
+@media only screen and (orientation: landscape)  {
+    #hero-section {
+        height: 100vh;
+    }    
+}
+
+/*################## header #######################*/
+
+header {
+    height: 25px;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #330905;
+    border-top: solid 10px #270603;
+}
+
+header p {
+    font-size: 10px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+}
+
+header img {
+    height: 70px;
+    margin-top: 20px;
+    text-align: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+header a:nth-child(3) {
+    font-size: 10px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: right;
+    color: #C5A153;
+}
+
+header i { margin-right: 5px; }
+
+
+@media only screen and (min-width: 550px) {
+    header {
+        height: 35px;
+        padding: 5px 20px;;
+    }
+     
+    header p {
+        font-size: 15px;
+}
+
+    header img {
+        height: 80px;
+        margin-top: 19px;
+    }
+
+    header a:nth-child(3) {
+        font-size: 15px;
+    }
+}
+
+/*################## hero #######################*/
+
+#hero {
+    background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)) ),url(../img/1920/hero1920-min.jpg) center no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/1920/hero1920-min.jpg) center no-repeat;
+	background-size: cover;
+    height: calc(100% - 45px);
+}
+
+#hero nav {
+    width: 95%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #fff;
+    text-align: center;
+}
+
+#hero nav ul { padding-top: 40px; }
+
+#hero nav ul li {
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px;
+}
+
+#hero nav ul li a:hover { color: #fff; }
+
+#hero nav ul li a { color: #EEB607; }
+
+#cta-gutscheine {
+    border: solid 1px #EEB607;
+    border-radius: 20px;
+}
+
+#hero span:hover { color: #b1914b; }
+
+#hero span { color: #fff; }
+
+#hero-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    height: calc(100% - 124px);
+    margin: 25px 20px;
+    color: #fff;
+}
+
+#hero-text p {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 80px;
+    line-height: 0.6;
+}
+
+#hero-text i {
+    color: #EEB607;
+    font-size: 10px;
+}
+
+#hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 25px;
+}
+
+#hero-text a {
+    width: 155px !important;
+    padding: 3px 0px !important;
+    margin: 20px auto;
+    border: 0;
+    background-color: #b1914b;
+    color: #fff;
+    display: block;
+    border-radius: 100px;
+    -webkit-box-shadow: 0px 3px 0px 0px #997d41;
+    box-shadow: 0px 3px 0px 0px #997d41;
+    text-transform: none;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+#hero-text span:hover {
+    color: #fff !important;
+}
+
+#hero-text a:hover { 
+    background-color: #c09c4f;
+}
+
+#wahanda-online-booking-widget {
+  height: 40px !important;
+  line-height: 40px !important;
+  padding: 0 !important;
+  font-family: 'Quicksand', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 100 !important;
+}
+
+#wahanda-online-booking-widget span {
+  height: 20px !important;
+  line-height: 20px !important;
+  padding: 0 0 0 25px !important;
+  background: url("https://cdneu.wahanda.net/images/view/v2.i482051.w30.h30.x109F8E79.png") 0 0 no-repeat !important;
+  background-size: 20px 20px !important;
+}
+
+@media only screen and (min-width: 550px) {
+    
+    #hero {
+        height: calc(100% - 55px);
+    }
+    
+    #hero nav ul li {
+        font-size: 18px;
+    }
+    
+    #hero-text  {
+        height:calc(100% - 133px);
+    }
+    
+    #hero-text p {
+        font-size: 110px;
+    }
+    
+    #hero-text i {
+        font-size: 15px;
+    }
+    
+    #hero-text h1 {
+        font-size: 35px;
+    }
+    
+    #hero-text a {
+        font-size: 17px;
+        width: 150px;
+        padding: 13px 0;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    
+    #hero-section {
+        min-height: 450px;
+    }
+    
+    #hero-text {
+        max-height: 500px;
+    }
+    
+    #hero-text p {
+        font-size: 160px;
+    }
+    
+    #hero-text h1 {
+        font-size: 50px;
+    }
+}
+
+
+/*################## hero subpage #######################*/
+
+#wrapper {
+    min-height: 100%;
+    margin-bottom: -160px;
+}
+
+#hero-subpage-section {
+    width: 100%;
+    border-bottom: solid 3px #C5A153;
+}
+
+#hero-subpage {
+    background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)) ),url(../img/1920/hero1920-min.jpg) center no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/1920/hero1920-min.jpg) center no-repeat;
+	background-size: cover;
+    height: 250px;
+}
+
+#hero-subpage nav {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #fff;
+    text-align: center;
+}
+
+#hero-subpage nav ul { padding-top: 40px; }
+
+#hero-subpage nav ul li {
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px;
+}
+
+#hero-subpage nav ul li a:hover { color: #fff; }
+
+#hero-subpage nav ul li a { color: #EEB607; }
+
+#hero-subpage #hero-text h1 { font-style:normal; }
+
+.subpage-text-outer {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 0;
+    background-color: #330905;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.subpage-text-inner {
+    width: 100%;
+    background-color: #F5F5F5;
+    border: solid 1px #707070;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.subpage-text-inner h2 {
+    margin: 20px 0 10px 0;
+    color: #111;
+    font-size: 25px;
+}
+
+.subpage-text-inner h3 {
+    margin: 20px 0 10px 0;
+    color: #111;
+    font-size: 20px;
+}
+
+.subpage-text-inner h4 {
+    margin: 20px 0 10px 0;
+    color: #111;
+    font-size: 20px;
+}
+
+.subpage-text-inner p {
+    color: #111;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    font-size: 12px;
+    margin: 10px 0;
+    color: #121110;
+}
+
+table th {
+    text-align: right;
+    width: 50%;
+    padding-right: 5px;
+    line-height: 2.5;
+}
+
+table td {
+    text-align: left;
+    padding-left: 5px;
+}
+
+@media only screen and (min-width: 550px) {
+    
+    #hero-subpage nav ul li {
+        font-size: 18px;
+    }
+    
+    table {
+        font-size: 18px;
+    }
+    
+}
+
+@media only screen and (min-width: 900px) {
+    .subpage-text-outer {
+        margin-top: 25px;
+        width: 80%;
+    }
+    
+}
+
+/*################## h2 boxes #######################*/
+
+.h2-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 10px 10px;
+    min-height: 150px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #321411;
+    border-bottom-left-radius: 48px;
+    border-bottom-right-radius: 48px;
+}
+
+.second-h2-box {
+    margin-bottom: 20px;
+}
+
+.h2-boxes img {
+    width: 45px;
+    height: 45px;
+    margin-top: -30px;
+}
+
+.h2-boxes h2 {
+    font-size: 17px;
+    margin: 5px 0 0 0;
+}
+
+#bigger-h2 {
+    font-size: 25px;
+}
+
+.h2-boxes i {
+    color: #fff;
+    font-size: 10px;
+}
+
+.h2-boxes p {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 5px 0;
+}
+
+.style-box {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 60px;
+    height: 5px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #C5A153;
+}
+
+@media only screen and (min-width: 550px) {
+    .h2-boxes img {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .h2-boxes h2 {
+        font-size: 23px;
+    }
+    
+    .h2-boxes i {
+        font-size: 13px;
+    }
+    
+    .h2-boxes p {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    
+    .h2-boxes {
+        border-bottom-left-radius: 120px;
+        border-bottom-right-radius: 120px;
+    }
+    
+}
+
+@media only screen and (min-width: 900px) {
+    .h2-boxes h2 {
+        font-size: 30px;
+        margin: 5px 0 0 0;
+    }
+
+    #bigger-h2 {
+        font-size: 35px;
+    }
+}
+
+/*################## philosophie #################*/
+
+#philosophie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    
+}
+
+.icons {
+    text-align: center;
+    padding: 20px 15%;
+    width: 180px;
+}
+
+.icons img {
+    width: 120px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.icons strong {
+    font-size: 20px;
+    color: #EEB607;
+}
+
+.icons p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 7px;
+}
+
+@media only screen and (min-width: 900px) {
+    
+    #philosophie {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+    }
+    
+    #philosophie .icons {
+        padding: 20px 20px 0 20px;
+        min-height: 280px;
+    }
+
+    .flex-icon1 { -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; }
+    
+    .flex-icon2 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
+    
+    .flex-icon3 { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }
+    
+    .flex-icon4 { -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; }
+    
+    .flex-icon5 { -webkit-box-ordinal-group: 6; -ms-flex-order: 5; order: 5; }
+    
+    .main-icon img { width: 150px; }
+}
+/*################## team #################*/
+
+#team img {
+    width: 100%;
+    background-color: #C5A153;
+}
+
+#text-box-team {
+    margin-top: -5px;
+    padding: 20px;
+    background-color: #C5A153;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: solid 3px #fff;
+}
+
+@media only screen and (min-width: 900px) {
+    #text-box-team {
+        padding: 30px;
+        font-size: 16px;
+    }
+}
+
+/*################## behandlungen #######################*/
+
+#accordion-border {
+    margin-top: 20px;
+    border: solid 3px #C5A153;
+    border-bottom: solid 3px #C5A153;
+}
+
+.accordion {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+.accordion .accordion-toggle {
+	position: absolute;
+	display: none;
+}
+
+.accordion label {
+	position: relative;
+	display: block;
+    text-align: center;
+	height: 55px;
+    line-height: 55px;
+	padding: 0 20px;
+    color: #fff;
+	font-size: 22px;
+	font-weight: 400;
+    font-family: 'Playfair Display', serif;
+	border-top: 1px solid #fff;
+	cursor: pointer;
+}
+
+#behandlungen .accordion:nth-child(odd)  {
+    background-color: #A78847;
+}
+
+#behandlungen .accordion {
+    background-color: #C5A153;
+}
+
+.accordion label:after {
+    content: '\f053';
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    font-family: fontawesome;
+    font-size: 19px;
+    color: #EEB607;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: .3s transform;
+    transition: .3s transform;
+}
+
+.accordion-img {
+    position: relative;
+}
+
+.accordion-img img {
+    width: 100%;
+}
+
+.accorion-img-subline {
+    width: 100%;
+    position: absolute;
+    bottom: 4px;
+    margin: auto;
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #EEB607;
+    border-bottom: 2px solid #EEB607;
+    font-size: 14px;
+}
+
+.accordion section {
+	max-height: 0;
+	transition: max-height .5s ease-in-out;
+	overflow: hidden;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+
+.accordion .accordion-toggle:checked ~ label:after {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.accordion .accordion-toggle:checked ~ section {
+    max-height: 2000px;
+}
+
+.accordion section p {
+    margin: 15px 0;
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #111;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+section .cta-light {
+    display: block !important;
+    width: 150px !important;
+    margin: auto !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    font-family: 'Quicksand', sans-serif !important;
+    border: solid 2px #7B1FA2 !important;
+    border-radius: 500px !important;
+    text-decoration: none !important;
+    background-color: #F5F5F5 !important;
+}
+
+.cta-light span {
+    display: none !important;
+}
+
+section a {
+    border-bottom: 1px solid #7B1FA2;
+    padding-bottom: 3px;
+    color: #6A1B9A !important;
+    text-decoration: none !important;
+}
+
+.accordion table {
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.accordion table tr:nth-child(odd) {
+    background-color: #e4e4e4;
+}
+
+
+.accordion table th {
+    text-align: center;
+    background-color: #D1D1D1;
+}
+
+.accordion table td {
+    text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+    
+    .accordion label {
+        font-size: 27px;
+    }
+    
+    .accorion-img-subline {
+        padding: 20px 0;
+        font-size: 20px;
+    }
+    
+    .accordion section p {
+        font-size: 17px;
+        line-height: 1.5;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    
+    #accordion-border {
+        width: 900px;
+        margin: auto;
+        margin-top: 20px;
+        border: solid 30px #fff;
+        border-radius: 55px;
+        background-color: #fff;
+    }
+    
+    #behandlungen .accordion:first-child {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    
+    #behandlungen .accordion:last-child {
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    
+    #behandlungen .accordion:last-child section{
+        -webkit-border-bottom-right-radius: 30px;
+        -webkit-border-bottom-left-radius: 30px;
+        -moz-border-radius-bottomright: 30px;
+        -moz-border-radius-bottomleft: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        }
+    
+}
+
+
+/*################## harmonie #######################*/
+
+#harmonie {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    background-image: url(../img/harmonie-min.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#harmonie-text {
+    width: 100%;
+    height: calc(100% - 3px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+    border-bottom: solid 3px #C5A153;
+    border-top: solid 3px #C5A153;
+}
+
+@media only screen and (min-width: 900px) {
+    
+    #harmonie {
+        height: 300px;
+    }
+    
+    #harmonie-text {
+        font-size: 35px;
+    }
+}
+
+/*################## contact #######################*/
+
+#contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#contact .icons {
+    padding: 20px 10px;
+}
+
+#address {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #321411;
+}
+
+#address i {
+    color: #fff;
+    font-size: 15px;
+    margin: 5px 00 0;
+}
+
+#address p {
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 550px) {
+    
+    #contact {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        align-items: baseline;
+    }
+    
+    #contact .icons {
+        width: 160px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    
+    #address {
+        padding: 25px;
+    }
+    
+    #address h2 {
+        font-size: 40px;
+    }
+}
+
+/*################## map #######################*/
+
+#map {
+   margin: 10px 0; 
+}
+
+/*################## footer #######################*/
+
+.push {
+    height: 160px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    background-color: #330905;
+    padding: 10px;
+    margin-top: 25px;
+    text-align: center;
+    border-bottom: solid 30px #270603;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+footer nav {
+    max-width: 400px;
+    margin: auto;
+}
+
+footer nav ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+footer nav ul li a {
+    color: #C5A153;
+}
+
+footer nav ul li a:hover {
+    color: #fff;
+}
+
+footer img {
+    height: 70px;
+    margin-top: 15px;
+}
+
+footer p {
+    line-height: 25px;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*################## Gutscheine #######################*/
+
+#flex-wrapper {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #330905;
+}
+
+.gutschein-box {
+    background-color: #F5F5F5;
+    text-align: center;
+    max-width: 400px;
+    min-width: 300px;
+    margin: 5px;
+    border: solid 2px #fff;
+}
+
+@media only screen and (min-width: 600px) {
+    
+    #flex-wrapper {
+        flex-direction: row;
+    }
+    
+    .gutschein-box {
+        background-color: #F5F5F5;
+        text-align: center;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 calc(33.33% - 10px);
+        max-width: 400px;
+        min-width: 300px;
+        flex: 1 0 calc(33.33% - 22px);
+        margin: 5px;
+        border: solid 2px #fff;
+    }
+}
+
+.gutschein-img {
+    position: relative;
+}
+
+.gutschein-img img {
+    width: 100%;
+    height: 216px;
+}
+
+.gutschein-img-subline {
+    width: 100%;
+    position: absolute;
+    bottom: 4px;
+    margin: auto;
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #EEB607;
+    border-bottom: 2px solid #EEB607;
+    font-size: 14px;
+}
+
+.gutschein-box h6 {
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    background-color: #C5A153;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+
+.gutschein-box form {
+    margin: 20px 0;
+}
+
+.gutschein-box table td {
+    text-align: center;
+}
